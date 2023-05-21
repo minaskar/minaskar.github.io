@@ -238,24 +238,39 @@
             <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://journals.aps.org/" rel="external nofollow noopener" target="_blank">PhysRev</a></abbr></div>
+        <div class="col-sm-2 preview">
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/brownian-motion.gif-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/brownian-motion.gif-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/brownian-motion.gif-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/brownian-motion.gif" class="preview z-depth-1 rounded" width="auto" height="auto" alt="brownian-motion.gif" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
 
         <!-- Entry bib key -->
-        <div id="PhysRev.47.777" class="col-sm-8">
+        <div id="karamanis2021zeus" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?</div>
+        <div class="title">zeus: a python implementation of ensemble slice sampling for efficient Bayesian parameter inference</div>
         <!-- Author -->
         <div class="author">
         
 
-        <em>A. Einstein</em>, <a href="https://en.wikipedia.org/wiki/Boris_Podolsky" rel="external nofollow noopener" target="_blank">B. Podolsky</a>, and <a href="https://en.wikipedia.org/wiki/Nathan_Rosen" rel="external nofollow noopener" target="_blank">N. Rosen</a>
-</div>
+        Minas Karamanis, Florian Beutler, and John A Peacock</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>Phys. Rev.</em>, May 1935
+          <em>Monthly Notices of the Royal Astronomical Society</em>, 2021
         </div>
         <div class="periodical">
           
@@ -264,18 +279,35 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-            <a href="/assets/pdf/example_pdf.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://academic.oup.com/mnras/article-abstract/508/3/3589/6381726" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://arxiv.org/pdf/2105.03468.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1103/PhysRev.47.777"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRev.47.777" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1093/mnras/stab2867"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1093/mnras/stab2867" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.</p>
+            <p>We introduce zeus, a well-tested Python implementation of the Ensemble Slice Sampling (ESS) method for Bayesian parameter inference. ESS is a novel Markov chain Monte Carlo (MCMC) algorithm specifically designed to tackle the computational challenges posed by modern astronomical and cosmological analyses. In particular, the method requires only minimal hand-tuning of 1−2 hyperparameters that are often trivial to set; its performance is insensitive to linear correlations and it can scale up to 1000s of CPUs without any extra effort. Furthermore, its locally adaptive nature allows to sample efficiently even when strong non-linear correlations are present. Lastly, the method achieves a high performance even in strongly multimodal distributions in high dimensions. Compared to emcee, a popular MCMC sampler, zeus performs 9 and 29 times better in a cosmological and an exoplanet application, respectively.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">karamanis2021zeus</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{zeus: a python implementation of ensemble slice sampling for efficient Bayesian parameter inference}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Karamanis, Minas and Beutler, Florian and Peacock, John A}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Monthly Notices of the Royal Astronomical Society}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{508}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{3}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{3589--3603}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Oxford University Press}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1093/mnras/stab2867}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1093/mnras/stab2867}</span><span class="p">,</span>
+  <span class="na">dimensions</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
           </div>
         </div>
       </div>

@@ -1,8 +1,6 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
 @article{karamanis2021zeus,
   bibtex_show={true},
   title={zeus: a python implementation of ensemble slice sampling for efficient Bayesian parameter inference},
@@ -13,11 +11,15 @@
   pages={3589--3603},
   year={2021},
   publisher={Oxford University Press},
+  doi={10.1093/mnras/stab2867},
   url={https://doi.org/10.1093/mnras/stab2867},
   html={https://academic.oup.com/mnras/article-abstract/508/3/3589/6381726},
   pdf={https://arxiv.org/pdf/2105.03468.pdf},
   abstract={We introduce zeus, a well-tested Python implementation of the Ensemble Slice Sampling (ESS) method for Bayesian parameter inference. ESS is a novel Markov chain Monte Carlo (MCMC) algorithm specifically designed to tackle the computational challenges posed by modern astronomical and cosmological analyses. In particular, the method requires only minimal hand-tuning of 1−2 hyperparameters that are often trivial to set; its performance is insensitive to linear correlations and it can scale up to 1000s of CPUs without any extra effort. Furthermore, its locally adaptive nature allows to sample efficiently even when strong non-linear correlations are present. Lastly, the method achieves a high performance even in strongly multimodal distributions in high dimensions. Compared to emcee, a popular MCMC sampler, zeus performs 9 and 29 times better in a cosmological and an exoplanet application, respectively.},
-  preview={brownian-motion.gif}
+  preview={brownian-motion.gif},
+  altmetric={105645877},
+  dimensions={true},
+  selected={true},
 }
 
 @article{karamanis2021ensemble,
@@ -29,29 +31,10 @@
   pages={1--18},
   year={2021},
   publisher={Springer},
+  url={https://doi.org/10.1007/s11222-021-10038-2},
+  html={https://link.springer.com/article/10.1007/s11222-021-10038-2},
+  pdf={https://arxiv.org/pdf/2002.06212.pdf},
+  abstract={Slice sampling has emerged as a powerful Markov Chain Monte Carlo algorithm that adapts to the characteristics of the target distribution with minimal hand-tuning. However, Slice Sampling’s performance is highly sensitive to the user-specified initial length scale hyperparameter and the method generally struggles with poorly scaled or strongly correlated distributions. This paper introduces Ensemble Slice Sampling (ESS), a new class of algorithms that bypasses such difficulties by adaptively tuning the initial length scale and utilising an ensemble of parallel walkers in order to efficiently handle strong correlations between parameters. These affine-invariant algorithms are trivial to construct, require no hand-tuning, and can easily be implemented in parallel computing environments. Empirical tests show that Ensemble Slice Sampling can improve efficiency by more than an order of magnitude compared to conventional MCMC methods on a broad range of highly correlated target distributions. In cases of strongly multimodal target distributions, Ensemble Slice Sampling can sample efficiently even in high dimensions. We argue that the parallel, black-box and gradient-free nature of the method renders it ideal for use in scientific fields such as physics, astrophysics and cosmology which are dominated by a wide variety of computationally expensive and non-differentiable models.},
   preview={wave-mechanics.gif}
-}
-
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
 }
 

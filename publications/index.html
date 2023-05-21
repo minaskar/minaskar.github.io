@@ -189,8 +189,10 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
             <a href="https://academic.oup.com/mnras/article-abstract/508/3/3589/6381726" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://arxiv.org/pdf/2105.03468.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
           
           <div class="badges">
@@ -198,7 +200,11 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          <!-- Hidden bibtex block -->
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>We introduce zeus, a well-tested Python implementation of the Ensemble Slice Sampling (ESS) method for Bayesian parameter inference. ESS is a novel Markov chain Monte Carlo (MCMC) algorithm specifically designed to tackle the computational challenges posed by modern astronomical and cosmological analyses. In particular, the method requires only minimal hand-tuning of 1−2 hyperparameters that are often trivial to set; its performance is insensitive to linear correlations and it can scale up to 1000s of CPUs without any extra effort. Furthermore, its locally adaptive nature allows to sample efficiently even when strong non-linear correlations are present. Lastly, the method achieves a high performance even in strongly multimodal distributions in high dimensions. Compared to emcee, a popular MCMC sampler, zeus performs 9 and 29 times better in a cosmological and an exoplanet application, respectively.</p>
+          </div>
+<!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">karamanis2021zeus</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{zeus: a python implementation of ensemble slice sampling for efficient Bayesian parameter inference}</span><span class="p">,</span>

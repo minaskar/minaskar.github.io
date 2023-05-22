@@ -130,6 +130,113 @@
           <article>
             <!-- _pages/publications.md -->
 <div class="publications">
+  <h2 class="year">2023</h2>
+  <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="karamanis2023bayesian" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Bayesian Computation in Astronomy: Novel methods for parallel and gradient-free inference</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Minas Karamanis</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2303.16134</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2303.16134" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="https://era.ed.ac.uk/handle/1842/39683" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://arxiv.org/pdf/2303.16134.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.7488/era/2932"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.7488/era/2932" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The goal of this thesis is twofold; introduce the fundamentals of Bayesian inference and computation focusing on astronomical and cosmological applications, and present recent advances in probabilistic computational methods developed by the author that aim to facilitate Bayesian data analysis for the next generation of astronomical observations and theoretical models. The first part of this thesis familiarises the reader with the notion of probability and its relevance for science through the prism of Bayesian reasoning, by introducing the key constituents of the theory and discussing its best practices. The second part includes a pedagogical introduction to the principles of Bayesian computation motivated by the geometric characteristics of probability distributions and followed by a detailed exposition of various methods including Markov chain Monte Carlo (MCMC), Sequential Monte Carlo (SMC), and Nested Sampling (NS). Finally, the third part presents two novel computational methods (Ensemble Slice Sampling and Preconditioned Monte Carlo) and their respective software implementations (zeus and pocoMC). [abridged]</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="campagne2023jax" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">JAX-COSMO: An End-to-End Differentiable and GPU Accelerated Cosmology Library</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Jean-Eric Campagne, François Lanusse, Joe Zuntz, and
+          <span class="more-authors" title="click to view 7 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '7 more authors' ? 'Alexandre Boucaud, Santiago Casas, Minas Karamanis, David Kirkby, Denise Lanzieri, Austin Peel, Yin Li' : '7 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">7 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>The Open Journal of Astrophysics</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2302.05163" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="https://astro.theoj.org/article/74856-jax-cosmo-an-end-to-end-differentiable-and-gpu-accelerated-cosmology-library" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://arxiv.org/pdf/2302.05163.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.21105/astro.2302.05163"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.21105/astro.2302.05163" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>We present jax-cosmo, a library for automatically differentiable cosmological theory calculations. It uses the JAX library, which has created a new coding ecosystem, especially in probabilistic programming. As well as batch acceleration, just-in-time compilation, and automatic optimization of code for different hardware modalities (CPU, GPU, TPU), JAX exposes an automatic differentiation (autodiff) mechanism. Thanks to autodiff, jax-cosmo gives access to the derivatives of cosmological likelihoods with respect to any of their parameters, and thus enables a range of powerful Bayesian inference algorithms, otherwise impractical in cosmology, such as Hamiltonian Monte Carlo and Variational Inference. In its initial release, jax-cosmo implements background evolution, linear and non-linear power spectra (using halofit or the Eisenstein and Hu transfer function), as well as angular power spectra with the Limber approximation for galaxy and weak lensing probes, all differentiable with respect to the cosmological parameters and their other inputs. We illustrate how autodiff can be a game-changer for common tasks involving Fisher matrix computations, or full posterior inference with gradient-based techniques. In particular, we show how Fisher matrices are now fast, exact, no longer require any fine tuning, and are themselves differentiable. Finally, using a Dark Energy Survey Year 1 3x2pt analysis as a benchmark, we demonstrate how jax-cosmo can be combined with Probabilistic Programming Languages to perform posterior inference with state-of-the-art algorithms including a No U-Turn Sampler, Automatic Differentiation Variational Inference,and Neural Transport HMC. We further demonstrate that Normalizing Flows using Neural Transport are a promising methodology for model validation in the early stages of analysis.</p>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
+
   <h2 class="year">2022</h2>
   <ol class="bibliography">
 <li>

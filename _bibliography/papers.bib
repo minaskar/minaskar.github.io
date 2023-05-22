@@ -13,6 +13,7 @@
   html={https://era.ed.ac.uk/handle/1842/39683},
   abstract={The goal of this thesis is twofold; introduce the fundamentals of Bayesian inference and computation focusing on astronomical and cosmological applications, and present recent advances in probabilistic computational methods developed by the author that aim to facilitate Bayesian data analysis for the next generation of astronomical observations and theoretical models. The first part of this thesis familiarises the reader with the notion of probability and its relevance for science through the prism of Bayesian reasoning, by introducing the key constituents of the theory and discussing its best practices. The second part includes a pedagogical introduction to the principles of Bayesian computation motivated by the geometric characteristics of probability distributions and followed by a detailed exposition of various methods including Markov chain Monte Carlo (MCMC), Sequential Monte Carlo (SMC), and Nested Sampling (NS). Finally, the third part presents two novel computational methods (Ensemble Slice Sampling and Preconditioned Monte Carlo) and their respective software implementations (zeus and pocoMC). [abridged]},
   selected={true},
+  preview={corner.png}
 }
 
 @article{campagne2023jax,
@@ -63,6 +64,7 @@
   pdf={https://arxiv.org/pdf/2207.05652.pdf},
   abstract={We introduce preconditioned Monte Carlo (PMC), a novel Monte Carlo method for Bayesian inference that facilitates efficient sampling of probability distributions with non-trivial geometry. PMC utilizes a Normalizing Flow (NF) in order to decorrelate the parameters of the distribution and then proceeds by sampling from the preconditioned target distribution using an adaptive Sequential Monte Carlo (SMC) scheme. The results produced by PMC include samples from the posterior distribution and an estimate of the model evidence that can be used for parameter inference and model comparison, respectively. The aforementioned framework has been thoroughly tested in a variety of challenging target distributions achieving state-of-the-art sampling performance. In the cases of primordial feature analysis and gravitational wave inference, PMC is approximately 50 and 25 times faster, respectively, than nested sampling (NS). We found that in higher dimensional applications, the acceleration is even greater. Finally, PMC is directly parallelisable, manifesting linear scaling up to thousands of CPUs.},
   selected={true},
+  preview={smc},
 }
 
 @article{Karamanis2022, 
@@ -142,6 +144,6 @@
   html={https://link.springer.com/article/10.1007/s11222-021-10038-2},
   pdf={https://arxiv.org/pdf/2002.06212.pdf},
   abstract={Slice sampling has emerged as a powerful Markov Chain Monte Carlo algorithm that adapts to the characteristics of the target distribution with minimal hand-tuning. However, Slice Sampling’s performance is highly sensitive to the user-specified initial length scale hyperparameter and the method generally struggles with poorly scaled or strongly correlated distributions. This paper introduces Ensemble Slice Sampling (ESS), a new class of algorithms that bypasses such difficulties by adaptively tuning the initial length scale and utilising an ensemble of parallel walkers in order to efficiently handle strong correlations between parameters. These affine-invariant algorithms are trivial to construct, require no hand-tuning, and can easily be implemented in parallel computing environments. Empirical tests show that Ensemble Slice Sampling can improve efficiency by more than an order of magnitude compared to conventional MCMC methods on a broad range of highly correlated target distributions. In cases of strongly multimodal target distributions, Ensemble Slice Sampling can sample efficiently even in high dimensions. We argue that the parallel, black-box and gradient-free nature of the method renders it ideal for use in scientific fields such as physics, astrophysics and cosmology which are dominated by a wide variety of computationally expensive and non-differentiable models.},
-  preview={wave-mechanics.gif}
+  preview={slice-sampling.png}
 }
 
